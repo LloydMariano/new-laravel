@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Medclick - Dashboard</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -22,9 +22,9 @@
                 font-family: 'Nunito', sans-serif;
             }
             .logo{
-                margin-left: -1%;
                 margin-top: -1%;
                 padding-bottom: -2%;
+                margin-right: 1%;
             }
             
            .btn1{              
@@ -102,6 +102,7 @@
                 text-align: center;
 
             }
+            
         </style>
     </head>
     <body class="antialiased">
@@ -109,15 +110,15 @@
        <div class="logo">
        <a href="/"><img src="{{ URL('image/med-logo.png') }}" alt="" height="120"></a>
        </div>
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav mr-auto justify-content-end">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home </a>
+        <a class="nav-link" href="{{ url('/home')}}">Home </a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="{{ url('/home')}}">About</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#">Contact </a>
+        <a class="nav-link" href="{{ url('/home')}}">Contact </a>
       </li>
       <li class="nav-item1 justify-content-end">
       <img src="{{ URL('image/profile.png') }}" alt="" height="40" class="img1">
